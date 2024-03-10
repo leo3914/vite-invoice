@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  counter-reset: recordCounter;
+}
+
+.row-no::before {
+  counter-increment: recordCounter;
+  content: counter(recordCounter);
+}
